@@ -4,12 +4,11 @@ using namespace std;
 // Declare Function Prototypes
 //********************
 
-int getTwoValues(int &input1, int &input2){
+void getTwoValues(int &input1, int &input2){
     cout << "Enter the first value: ";
     cin >> input1;
     cout << "Enter the second value: ";
     cin >> input2;
-    
 }
 
 int getNextPrime(int &x){
@@ -30,6 +29,7 @@ int getNextPrime(int &x){
             break;
         }
     }
+    return x;
 }
 int getPrevPrime(int &x){
     int i;
@@ -49,4 +49,5 @@ int getPrevPrime(int &x){
             break;
         }
     }
+    return x;
 }   
